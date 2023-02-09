@@ -1,0 +1,133 @@
+header {
+    background-color: $bacront-bg;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+        color: #fff;
+        font-family: Georgia,
+            'Times New Roman', Times, serif;
+        font-size: 30px;
+        padding: 35px 0;
+
+        &:hover {
+            color: $button-bg-hower;
+            transform: $transform_card;
+            transition: $transition-card;
+        }
+
+        &:active {
+            color: $active-bg;
+            transform: $transform_card;
+            transition: $transition-card;
+        }
+    }
+
+    ul {
+        display: flex;
+        gap: 34px;
+
+        a {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 25px;
+            color: #fff;
+            opacity: 0.8;
+
+            &:hover {
+                color: $button-bg-hower;
+                transform: $transform_card;
+                transition: $transition-card;
+            }
+            &:active {
+                color: $active-bg;
+                transform: $transform_card;
+                transition: $transition-card;
+            }
+        }
+    }
+    img{
+        &:hover {
+            background-color    : $button-bg-hower;
+            transform: $transform_card;
+            transition: $transition-card;
+        }
+        &:active {
+            background-color: $active-bg;
+            transform: $transform_card;
+            transition: $transition-card;
+        }  
+    }
+}
+
+
+#headr__line {
+    color: #fff;
+    opacity: 0.8;
+    display: block;
+}
+
+.header__span {
+    display: none;
+}
+
+.header__medium {
+    display: flex;
+    align-items: center;
+
+    h1 {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 44px;
+        text-align: center;
+        color: #fff;
+        padding: 98px 0;
+        &:hover {
+            color: $button-bg-hower;
+            transform: $transform_card;
+            transition: $transition-card;
+        }
+        &:active {
+            color: $active-bg;
+            transform: $transform_card;
+            transition: $transition-card;
+        }
+    }
+}
+
+//  media 
+
+@media screen and (max-width: 615px) {
+    .header__span {
+        display: inline-block;
+    }
+
+    .header__box {
+        h2 {
+            padding: 32px 0;
+            font-size: 24px;
+        }
+
+        ul {
+            display: none;
+        }
+    }
+
+    .header__medium {
+        h1 {
+            font-size: 28px;
+            padding: 32px 0;
+        }
+    }
+}
